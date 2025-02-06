@@ -13,8 +13,8 @@
     <nav>
         <ul>
             <li><a href="#about">About</a></li> <!--# ensures it doesn't link to a new URL; we want to stay on the same page-->
-            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="./resources/MasonFreerResume.pdf" target="_blank" class="download">Resume (pdf)</a></li>
         </ul>
@@ -26,30 +26,47 @@
             data visualization, and product management. Passionate about leveraging my analytical and technical skills to create 
             data-driven solutions and help organizations succeed.
     </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>This is the skills section.</p>
-    </section>
-    <section id="projects"> <!--Add functionality to link to project from both name and image-->
+
+    <section id="projects">
+      <h1 class="portfolio-title">PROJECTS</h1> <!--Change this later in styling - bigger font, left align-->
         <div class="projects-container">
-            <h1 class="projects-title">PROJECTS</h1> <!--Change this later in styling - bigger font, left align-->
             <div class="projects-grid">
+
               <div class="project">
                 <span class="project-image">
-                  <img src="image1.jpg" alt="Project 1 Image">
+                  <a href="google.com">
+                  <img src="resources/deadlock icon.png" alt="deadlock logo">
+                  </a>
                 </span>
                 <span class="project-info">
-                  <h2>Project 1</h2>
-                  <p>2022</p>
+                  <a href="google.com">
+                  <h2>Deadlock Analytics Dashboard</h2></a>
+                  <p>January 2025 - Present</p>
                 </span>
               </div>
               <div class="project">
                 <span class="project-image">
-                  <img src="image2.jpg" alt="Project 2 Image">
+                  <a href="https://github.com/mason-freer/IST462-Motor-Crash-Analysis/tree/main">
+                  <img src="resources/car-collision.jpg" alt="car collision">
+                  </a>
                 </span>
                 <span class="project-info">
-                  <h2>Project 2</h2>
-                  <p>2021</p>
+                  <a href="https://github.com/mason-freer/IST462-Motor-Crash-Analysis/tree/main">
+                  <h2>Motor Vehicle Collision Analysis</h2></a>
+                  <p>Aug-Dec 2023</p>
+                </span>
+              </div>
+              <div class="project">
+                <span class="project-image">
+                  <a href="https://github.com/mason-freer/IST421-Data-Visualization">
+                  <img src="resources/mental health poster.webp" alt="mental health icon">
+                  </a>
+                </span>
+                <span class="project-info">
+                  <a href="https://github.com/mason-freer/IST421-Data-Visualization">
+                  <h2>Mental Health Poster</h2>
+                  </a>
+                  <p>December 2023</p>
                 </span>
               </div>
               <div class="project">
@@ -74,6 +91,58 @@
           </div>
 
     </section>
+
+    <section id="skills">
+        <h1 class="portfolio-title">SKILLS</h1>
+        <div class="skills-container">
+          <div class="engineering-skills">
+            <h2>Engineering</h2>
+            <ul>
+              <li class="skills-bullet">Java</li>
+              <li class="skills-bullet">C++/C#</li>
+              <li class="skills-bullet">MATLAB</li>
+              <li class="skills-bullet">CAD</li>
+              <li class="skills-bullet">GitHub</li>
+              <li class="skills-bullet">Scrum/Agile</li>
+              <!-- Add more skills here -->
+            </ul>
+          </div>
+          <div class="data-science-skills">
+            <h2>Data Science/Analytics</h2>
+            <ul>
+              <li class="skills-bullet">Python/PySpark</li>
+              <li class="skills-bullet">MySQL</li>
+              <li class="skills-bullet">Power BI</li>
+              <li class="skills-bullet">Microsoft Excel</li>
+              <li class="skills-bullet">HTML & CSS</li>
+              <!-- Add more skills here -->
+            </ul>
+          </div>
+        </div>
+        <!--<h1 class="portfolio-title">CERTIFICATIONS</h1>-->
+        <div class="certification-container">
+          <div class="certification">
+            <img src="resources/microsoft_logo.jpg" alt="Microsoft Logo">
+            <div class="certification-info">
+              <h2>Microsoft Excel 2019</h2>
+              <p>Microsoft</p>
+              <p class="issue-date">Issued Nov 2023</p>
+            </div>
+          </div>
+          <div class="certification">
+            <img src="resources/aws_logo.jpg" alt="AWS Logo" style="width: 150px; height: 150px"> <!--Microsoft Icon has extra whitespace surrounding it, so make AWS look smaller to compensate-->
+            <div class="certification-info">
+              <h2>AWS Academy Cloud Foundations</h2>
+              <p>Amazon Web Services (AWS)</p>
+              <p class="issue-date">Issued Feb 2024</p>
+            </div>
+          </div>
+        </div>
+
+
+          
+
+    </section>
     <!--
     <section id="contact">
         <h2>Contact</h2>
@@ -84,6 +153,9 @@
 
     <footer>
         <p>&copy; 2025 Mason Freer</p>
+        <a href="https://www.linkedin.com/in/mason-freer/">
+        <img src="resources/blue linkedin.png" style="width: 4%; height: 4%;">
+        </a>
     </footer>
 </body>
 </html>

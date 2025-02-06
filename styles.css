@@ -71,23 +71,93 @@ section {
 }
 footer {
     padding: 2em;
+    display: flex;
+    align-items: center;
 }
 
 h2 {
     margin-top: 0;
 }
 
+/* styling for the skills container */
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+/* Certification section */
+
+.certification-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.certification {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  width: 45%;
+}
+
+.certification img {
+  margin-right: 20px;
+}
+
+.certification-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.certification-info h2 {
+  margin-top: 0;
+  margin-bottom: -5px;
+}
+
+.certification-info p {
+  margin-bottom: -5px;
+}
+
+.issue-date {
+  color: gray;
+}
+
+/* End cert section */
+
+.engineering-skills, .data-science-skills {
+  width: 45%;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-bullet {
+  margin-bottom: 10px;
+}
+
+
+/* styling for the projects container */
 .projects-container {
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #f7f7f7;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  .projects-title {
-    text-align: center;
+  .portfolio-title {
+    text-align: left;
     margin-bottom: 20px;
+    font-size: 200%
   }
   
   .projects-grid {
@@ -130,8 +200,15 @@ h2 {
     font-size: 14px;
     color: #666;
   }
+
+  /* end project styling */
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
   
-  /* Responsive design */
+  /* Responsive design (for mobile/smaller resolutions) */
   @media only screen and (max-width: 768px) {
     .projects-grid {
       grid-template-columns: 1fr;

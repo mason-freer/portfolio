@@ -12,29 +12,74 @@
         </div>
     <nav>
         <ul>
-            <li><a href="#about">About</a></li>
+            <li><a href="#about">About</a></li> <!--# ensures it doesn't link to a new URL; we want to stay on the same page-->
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="./resources/MasonFreerResume.pdf" target="_blank" class="download" download>Resume (pdf)</a></li>
+            <li><a href="./resources/MasonFreerResume.pdf" target="_blank" class="download">Resume (pdf)</a></li>
         </ul>
     </nav>
     </header>
     <section id="about">
-        <p>Hello! Thanks for stopping by my page.
+        <p>Hello! Thanks for stopping by my page. <br><br>My name is Mason Freer. I am an Analyst and Developer 
+            with hands-on experience in Python, SQL, and Power BI. Skilled in customer data analysis, software development, 
+            data visualization, and product management. Passionate about leveraging my analytical and technical skills to create 
+            data-driven solutions and help organizations succeed.
     </section>
     <section id="skills">
         <h2>Skills</h2>
         <p>This is the skills section.</p>
     </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>This is the projects section.</p>
+    <section id="projects"> <!--Add functionality to link to project from both name and image-->
+        <div class="projects-container">
+            <h1 class="projects-title">PROJECTS</h1> <!--Change this later in styling - bigger font, left align-->
+            <div class="projects-grid">
+              <div class="project">
+                <span class="project-image">
+                  <img src="image1.jpg" alt="Project 1 Image">
+                </span>
+                <span class="project-info">
+                  <h2>Project 1</h2>
+                  <p>2022</p>
+                </span>
+              </div>
+              <div class="project">
+                <span class="project-image">
+                  <img src="image2.jpg" alt="Project 2 Image">
+                </span>
+                <span class="project-info">
+                  <h2>Project 2</h2>
+                  <p>2021</p>
+                </span>
+              </div>
+              <div class="project">
+                <span class="project-image">
+                  <img src="image3.jpg" alt="Project 3 Image">
+                </span>
+                <span class="project-info">
+                  <h2>Project 3</h2>
+                  <p>2020</p>
+                </span>
+              </div>
+              <div class="project">
+                <span class="project-image">
+                  <img src="image4.jpg" alt="Project 4 Image">
+                </span>
+                <span class="project-info">
+                  <h2>Project 4</h2>
+                  <p>2019</p>
+                </span>
+              </div>
+            </div>
+          </div>
+
     </section>
+    <!--
     <section id="contact">
         <h2>Contact</h2>
         <p>This is the contact section.</p>
     </section>
+    -->
     <script src="script.js"></script>
 
     <footer>

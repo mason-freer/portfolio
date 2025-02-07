@@ -1,19 +1,21 @@
-// Get all navigation links
 const navLinks = document.querySelectorAll('nav a');
 
 // Add event listener to each link
 navLinks.forEach(link => {
     link.addEventListener('click', event => {
-        // Prevent default link behavior
-        event.preventDefault();
-
-        // Get the target section ID
         const sectionId = link.getAttribute('href');
 
-        // Get the target section element
-        const section = document.querySelector(sectionId);
+        // If moving to internal page
+        if (sectionId.startsWith("#")) {
+            event.preventDefault(); // don't page refresh
 
-        // Scroll to the target section smoothly
-        section.scrollIntoView({ behavior: 'smooth' });
+            // get target section
+            const section = document.querySelector(sectionId);
+
+            // scroll to target section
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
     });
 });

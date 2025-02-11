@@ -1,17 +1,28 @@
 body {
     /*background-color: #040622;*/
     background-color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: Arial, sans-serif;*/
     margin: 0;
     padding: 0;
     color: #040622;
+    /* 
+  font-family: "League Spartan", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
-
+  */
+}
 header {
     display: flex;
     justify-content: space-between;
+    font-family: "League Spartan", serif;
+    font-size: 120%;
     align-items: center;
     padding: 1em;
+    background-color: #3a3939;
+    color: #fff;
 }
 
 .name {
@@ -33,7 +44,7 @@ nav {
 }
 .download {
     display: inline-block;
-    background-color: #333;
+    background-color: #000;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -57,7 +68,7 @@ nav li {
 }
 
 nav a {
-    color: #040622;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -67,8 +78,9 @@ nav a:hover {
 
 section {
     padding: 2em;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* horizontal, vertical, blur */
+    border-radius: 50px;
 }
 footer {
     padding: 2em;
@@ -158,7 +170,8 @@ ul {
   .portfolio-title {
     text-align: left;
     margin-bottom: 20px;
-    font-size: 200%
+    font-size: 200%;
+    font-family: "League Spartan", serif;
   }
   
   .projects-grid {

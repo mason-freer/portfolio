@@ -3,6 +3,10 @@
 <head>
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -12,22 +16,20 @@
         </div>
     <nav>
         <ul>
-            <li><a href="#about">About</a></li> <!--# ensures it doesn't link to a new URL; we want to stay on the same page-->
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects">Projects</a></li> <!--# ensures it doesn't link to a new URL; we want to stay on the same page-->
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#certifications">Certifications</a></li>
             <li><a href="https://github.com/mason-freer/portfolio/blob/main/resources/MasonFreerResume.pdf" class="download" target="_blank" rel="noopener noreferrer">
               Resume (pdf)</a></li>
         </ul>
     </nav>
     </header>
-    <section id="about">
+    <section>
         <p>Hello! Thanks for stopping by my page. <br><br>My name is Mason Freer. I am an Analyst and Developer 
             with hands-on experience in Python, SQL, and Power BI. Skilled in customer data analysis, software development, 
             data visualization, and product management. Passionate about leveraging my analytical and technical skills to create 
             data-driven solutions and help organizations succeed.
     </section>
-
     <section id="projects">
       <h1 class="portfolio-title">PROJECTS</h1> <!--Change this later in styling - bigger font, left align-->
         <div class="projects-container">
@@ -35,14 +37,14 @@
 
               <div class="project">
                 <span class="project-image">
-                  <a href="google.com">
+                  <!-- <a href="google.com"> -->
                   <img src="resources/deadlock icon.png" alt="deadlock logo">
                   </a>
                 </span>
                 <span class="project-info">
-                  <a href="google.com">
-                  <h2>Deadlock Analytics Dashboard</h2></a>
-                  <p>January 2025 - Present</p>
+                  <!--<a href="google.com"> -->
+                  <h2>Deadlock Analytics Dashboard (WIP)</h2></a>
+                  <p>February 2025</p>
                 </span>
               </div>
               <div class="project">
@@ -54,7 +56,7 @@
                 <span class="project-info">
                   <a href="https://github.com/mason-freer/IST462-Motor-Crash-Analysis/tree/main">
                   <h2>Motor Vehicle Collision Analysis</h2></a>
-                  <p>Aug-Dec 2023</p>
+                  <p>December 2023</p>
                 </span>
               </div>
               <div class="project">
@@ -70,16 +72,21 @@
                   <p>December 2023</p>
                 </span>
               </div>
-              <!--
+              
               <div class="project">
                 <span class="project-image">
-                  <img src="image3.jpg" alt="Project 3 Image">
+                  <a href="https://github.com/mason-freer/EEE370-Business-Proposal/blob/main/EEE370%20Final%20Report.pdf">
+                  <img src="resources/drink-ahead.png" alt="Drink Ahead Logo">
+                  </a>
                 </span>
                 <span class="project-info">
-                  <h2>Project 3</h2>
-                  <p>2020</p>
+                  <a href="https://github.com/mason-freer/EEE370-Business-Proposal/blob/main/EEE370%20Final%20Report.pdf">
+                  <h2>Business Proposal</h2>
+                  </a>
+                  <p>May 2023</p>
                 </span>
               </div>
+              <!--
               <div class="project">
                 <span class="project-image">
                   <img src="image4.jpg" alt="Project 4 Image">
@@ -107,7 +114,7 @@
               <li class="skills-bullet">CAD</li>
               <li class="skills-bullet">GitHub</li>
               <li class="skills-bullet">Scrum/Agile</li>
-              <!-- Add more skills here -->
+              <!-- next skill -->
             </ul>
           </div>
           <div class="data-science-skills">
@@ -118,11 +125,14 @@
               <li class="skills-bullet">Power BI</li>
               <li class="skills-bullet">Microsoft Excel</li>
               <li class="skills-bullet">HTML & CSS</li>
-              <!-- Add more skills here -->
+              <!-- next skill -->
             </ul>
           </div>
         </div>
-        <!--<h1 class="portfolio-title">CERTIFICATIONS</h1>-->
+    </section>
+
+    <section id="certifications">
+        <h1 class="portfolio-title">CERTIFICATIONS</h1>
         <div class="certification-container">
           <div class="certification">
             <img src="resources/microsoft_logo.jpg" alt="Microsoft Logo">
@@ -141,11 +151,10 @@
             </div>
           </div>
         </div>
-
+    </section>
 
           
 
-    </section>
     <!--
     <section id="contact">
         <h2>Contact</h2>
